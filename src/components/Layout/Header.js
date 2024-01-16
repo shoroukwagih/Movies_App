@@ -10,8 +10,8 @@ const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <div className="container-fluid bg-primary p-2 rounded-3">
+    <nav className="navbar navbar-expand-lg bg-black">
+      <div className="container-fluid bg-black p-2 rounded-3">
         <span
           className="navbar-brand"
           style={{ color: "white", fontSize: "25px", fontWeight: "bold" }}

@@ -3,16 +3,17 @@ import { useNavigate } from "react-router-dom";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { decreaseCounter, increaseCounter } from "../store/slices/counter";
+
 export default function MovieCard({ movieItem }) {
   const navigate = useNavigate();
   const posterPath = "https://image.tmdb.org/t/p/w500/" + movieItem.poster_path;
 
   const dispatch = useDispatch();
   const watchList = useSelector((state) => state.counter.watchList);
+
   return (
     <>
       <div
-        // onClick={() => navigate(`/movie-details/${movieItem.id}`)}
         className="d-flex flex-column"
         style={{
           borderRadius: "10px",
@@ -45,7 +46,7 @@ export default function MovieCard({ movieItem }) {
         </div>
 
         <img
-          alt="Poster Image"
+          alt=""
           src={posterPath}
           style={{
             width: "100%",
@@ -56,7 +57,7 @@ export default function MovieCard({ movieItem }) {
         />
 
         <div
-          className="d-flex flex-column bg-primary "
+          className="d-flex flex-column bg-secondary"
           style={{
             borderBottomLeftRadius: "10px",
             borderBottomRightRadius: "10px",
@@ -79,7 +80,7 @@ export default function MovieCard({ movieItem }) {
 
           <button
             type="button"
-            class="btn btn-danger"
+            className="btn btn-danger"
             onClick={() => navigate(`/movie-details/${movieItem.id}`)}
           >
             More

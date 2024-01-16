@@ -68,7 +68,7 @@ export default function WatchMovieCard({ movieID }) {
         />
 
         <div
-          className="d-flex flex-column bg-primary "
+          className="d-flex flex-column bg-secondary "
           style={{
             borderBottomLeftRadius: "10px",
             borderBottomRightRadius: "10px",

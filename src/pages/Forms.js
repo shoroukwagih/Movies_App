@@ -94,7 +94,7 @@ export default function Form() {
     return (
         <>
             <div className="container my-5">
-                <h1 className="text-primary mb-3 fs1 text-decoration-underline  text-center fw-bold">Register</h1>
+                <h1 className="text-secondary mb-3 fs1 text-decoration-underline  text-center fw-bold">Register</h1>
                 <form onSubmit={handleSubmit}>
                     <div class="my-3">
                         <label for="nameInput" class="fs-4 form-label">
@@ -186,7 +186,7 @@ export default function Form() {
                             </div>
                         )}
                     </div>
-                    <button type="submit" class="btn fs-3 btn-primary">
+                    <button type="submit" class="btn fs-3 btn-secondary">
                         Submit
                     </button>
                 </form>

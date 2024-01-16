@@ -8,7 +8,6 @@ const PaginatedList = ({ paginationFun }) => {
   const paginate = (pageNumber) => {
     setCurrentPage(pageNumber);
     paginationFun(pageNumber);
-    // console.log(pageNumber);
   };
 
   return (
